@@ -1,0 +1,262 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #111111;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+.slideshow-container {
+    width: 500px; /*width of the slideshow container */
+    height: 500px; /*height of the slideshow container */
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+}
+
+.mySlides {
+    width: 100%; /*full width of the container */
+    height: 100%; /* full height of the container */
+    display: none;
+}
+
+.mySlides img {
+    width: 100%; 
+    height: 100%;
+    /* Ensure the image covers the entire slide */
+    
+    
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 16px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+    transition: background-color 0.3s;
+}
+
+.next {
+    right: 0;
+    border-radius: 5px 0 0 5px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.dots-container {
+    text-align: center;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+.dot.active, .dot:hover {
+    background-color: #717171;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+#products {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.product {
+    flex: 0 1 calc(33.33% - 20px);
+    background-color: #f3f1f1;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 90px;
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+
+.product h3, .product p {
+    text-align: center; /* Center-align the text */
+    margin: 0 auto; /* Center the element horizontally */
+    max-width: 200px; /* Limit the maximum width of the text */
+    margin-top: 20px; 
+    margin-bottom: 10px
+}
+
+
+aside {
+    flex: 0 1 300px;
+    background-color: #f3f1f1;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+#cart {
+    list-style-type: none;
+    padding: 0;
+}
+
+#cart li {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0; 
+}
+    
+#cart li:last-child {
+    border-bottom: none; 
+}
+
+#total {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 1.2em; 
+    color: #333; 
+}
+
+
+#checkout-button {
+    display: block;
+    text-align: center;
+    margin: 20px 0px;
+}
+
+#checkout-button button {
+    padding: 10px 30px;
+    background-color: #d89e00;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#checkout-button button:hover {
+    background-color: #f0c14b;
+}
+
+.w3-bar .w3-button {
+    padding: 16px;
+  }
+
+nav {
+    margin-top: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+
+.product button.addToCart {
+    display: block; /* Ensure button occupies full width of container */
+    margin: 0 auto; /* Center the button horizontally */
+    width: 150px; 
+    background-color: #777777; 
+    color: white; /* Button text color */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px; 
+    cursor: pointer; /* Change cursor to pointer on hover */
+    font-size: 1em; 
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+.product button.addToCart:hover {
+    background-color: #005f86;
+}
+
+/* Billing Form Styles */
+#billing-form {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: #fff;
+    margin-top: 20px;
+}
+
+#billing-form h3 {
+    text-align: center;
+}
+
+#billing-form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+#billing-form input {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#billing-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+#billing-form button:hover {
+    background-color: #555;
+}

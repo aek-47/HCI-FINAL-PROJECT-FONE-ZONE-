@@ -1,0 +1,32 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url();
+    
+}
+
+.content {
+    margin: 80px;
+    padding: 20px;
+    text-align: center;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center; /* Center-align the contents */
+}
+
+.image-container img {
+    padding: 20px;
+    margin: 10px; 
+    width: 200px; 
+    height: 200px; 
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+    display: block; /* Ensure the image is displayed as a block element */
+    margin: auto; /* Center-align the image */
+}
+
+
+

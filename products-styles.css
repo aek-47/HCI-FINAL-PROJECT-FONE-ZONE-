@@ -1,0 +1,47 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('airdrop.gif'); /* Replace 'products-background.jpg' with the path to your image */
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+
+
+.landing {
+    display: flex;
+    justify-content: flex-start; /* Aligns the content to the left */
+    align-items: center bottom; /* Centers the landing content vertically */
+    height: 100vh; 
+    padding-left: 50px; 
+}
+
+
+.landing-content {
+    text-align: left; /* Aligns content to the left */
+}
+
+.landing-content h2 {
+    font-size: 2.5em; 
+    margin-bottom: 10px; /* Adds space below the heading */
+}
+
+.landing-content p {
+    font-size: 1.2em; /* Adjust the font size of the paragraph */
+    margin-bottom: 20px; /* Adds more space below the paragraph */
+}
+
+.btn {
+    background-color: #999999; 
+    color: white;
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 5px; /* Adds border radius for rounded corners */
+    text-decoration: none; /* Removes default link underline */
+    font-size: 1.1em; 
+}
+
+.btn:hover {
+    background-color: #005f86; /* Button background color on hover */
+}
